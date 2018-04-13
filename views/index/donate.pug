@@ -1,0 +1,17 @@
+doctype html
+html
+    include ../share/head
+    body
+        include ../share/header
+        div(class="container text-center pt-2")
+            h1 Welcome to Lannister Pay!
+            h3 请使用支付宝、微信、QQ、云闪付或Paypal扫码下面的二维码
+            div(class="container")
+                div(class="row text-center")
+                    img(class="img-thumbnail img-responsive col-md-6" style="height:100%" src="/static/my/alipay.jpg" alt="支付宝")
+                    img(class="img-thumbnail img-responsive col-md-6" style="height:100%" src="/static/my/weixin.jpg" alt="微信")
+                div(class="row text-center")
+                    img(class="img-thumbnail img-responsive col-md-4" style="height:100%" src='/static/my/qq.png' alt="QQ")
+                    img(class="img-thumbnail img-responsive col-md-4" style="height:100%" src="/static/my/yunshanfu.png" alt="云闪付")
+                    img(class="img-thumbnail img-responsive col-md-4" style="height:100%" src="/static/my/paypal.png" alt="paypal")
+        include ../share/footer

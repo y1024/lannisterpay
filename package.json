@@ -1,0 +1,31 @@
+{
+  "name": "lannisterpay",
+  "version": "1.0.0",
+  "description": "A Lannister always pays!",
+  "main": "lannister.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "lodash": "^4.17.5",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "dev": "nodemon lannister.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lannister",
+    "lannisterpay",
+    "lannister pay",
+    "A lannister always pays!",
+    "Tyrion"
+  ],
+  "author": "Eric Gui <erichui329@gmail.com>",
+  "license": "MIT"
+}
