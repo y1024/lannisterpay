@@ -24,17 +24,19 @@ cd myPayProject
 git clone git@github.com:i2j/lannisterpay.git .
 
 ```
- - 请注意Nginx的配置
-    - 配置反向代理
-    - 专门为`/static`目录写一个配置
+> - 请注意Nginx的配置
+>    - 配置反向代理
+>    - 专门为`/static`目录写一个配置
 >    ```bash
 >      # 请注意，这些应该都是绝对路径，别忘了最后的分号
 >       location /static {
 >         alias /my/Pay/Projecct/Absolute/Path/static;
 >    }
-    - 解决expressjs的一个老问题
->       location /favicon.ico {
+>    ```
+>   - 解决expressjs的一个老问题
+>    ```bash
 >      # 请注意，这些应该都是绝对路径，别忘了最后的分号
+>       location /favicon.ico {
 >         alias /The/Absolute/Path/of/favicon.ico;
 >    }
 >    ```
@@ -43,3 +45,6 @@ git clone git@github.com:i2j/lannisterpay.git .
  - 发布一个管理界面，达到多个目的：
     - 商家可以发布商品并收款，也就是生成带参数的二维码
     - static/my里的图片，只是测试用，里面目前默认是[大脑艾瑞克](https://awesomejs.org)的个人二维码，需要替换成你自己的
+
+### Licesne
+    - MIT
