@@ -38,7 +38,7 @@ router.get('/pay', (req,res)=>{
         
     }
     else{
-        res.redirect(301, "http://404notfound.org");
+        res.render('index/error', {err: "请使用微信/QQ/支付宝的app扫码！"})
     }
 });
 

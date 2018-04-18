@@ -1,0 +1,29 @@
+doctype html
+html
+    include ../share/head
+    body
+        include ../share/header
+        div(class="container text-center pt-2")
+            h1 Welcome to Lannister Pay!
+            h3 API服务商列表，排名不分先后，点击“感受一下”体验效果
+        div(class="container pt-2")
+            table(class="table table-hover text-center")
+                thead(class="thread-dark")
+                    tr(class="table-dark")
+                        th(scope="col") API服务商
+                        th(scope="col") 官方网址
+                        th(scope="col") 立刻体验
+                tbody
+                    tr(class="table-info")
+                        th(scope="row") PaysAPI
+                        td <a class="btn btn-outline-success btn-block" href="https://www.paysapi.com" target=_blank role="button">https://www.paysapi.com</a>
+                        td <a class="btn btn-outline-success btn-block" href="/api/paysapi" role="button">你感受一下</a>
+                    tr(class="table-info")
+                        th(scope="row") API2
+                        td <a class="btn btn-outline-success btn-block" href="https://www.paysapi.com" target=_blank role="button">https://www.paysapi.com</a>
+                        td <a class="btn btn-outline-success btn-block" href="#" role="button">Coming Soon</a>
+                    tr(class="table-info")
+                        th(scope="row") API3
+                        td <a class="btn btn-outline-success btn-block" href="https://www.paysapi.com" target=_blank role="button">https://www.paysapi.com</a>
+                        td <a class="btn btn-outline-success btn-block" href="#" role="button">Coming Soon</a>
+        include ../share/footer

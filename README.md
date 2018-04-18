@@ -14,6 +14,11 @@ npm install
 npm run dev
 ```
 
+#### 部署到服务器之前
+ - 请修改`utils/config.demo.js`，改名为`utils/config.js`，并填入自己的信息
+ - `static/my`里的图片，只是测试用，里面目前默认是[大脑艾瑞克](https://awesomejs.org)的个人二维码，需要去`utils/config.demo.js`里替换成自己的
+ - `static/my`里的图片`one.png`是你的多合一地址，请自己生成，推荐`liantu.com`这个网址，还可以设置各种不同的效果，以及中间带上自己的logo
+
 #### 部署到服务器
 ```bash
 
@@ -41,6 +46,7 @@ git clone git@github.com:i2j/lannisterpay.git .
 >    }
 >    ```
 
+
 ### TODO
  - 整合多个个人收款api服务
     - [paysapi.com](paysapi.com)
@@ -48,7 +54,7 @@ git clone git@github.com:i2j/lannisterpay.git .
     - greenzf.com
  - 发布一个管理界面，达到多个目的：
     - 商家可以发布商品并收款，也就是生成带参数的二维码
-    - static/my里的图片，只是测试用，里面目前默认是[大脑艾瑞克](https://awesomejs.org)的个人二维码，需要替换成你自己的
+    
 
 
 
@@ -60,5 +66,9 @@ git clone git@github.com:i2j/lannisterpay.git .
  - 目前微信不能用，微信都进不去支付路由('/lannister/pay')
  - QQ扫码也时不时不能用
     - 目前可以重现的是小米手机(MIUI)，如果QQ双开，用双开的QQ扫码，`可能`会出现问题，`解决方案`是你清理所有QQ进程，然后再扫，就好了
+ - 没有在`macOS`上测试过，仅测试过`Windows 10`
 
 ### Licesne: [MIT](License)
+
+### Sponsors :moneybag:
+ - PaysAPI: 感谢提供的测试接口和赞助，他们的网址：https://www.paysapi.com/

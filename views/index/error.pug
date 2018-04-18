@@ -5,10 +5,12 @@ html
         include ../share/header
         div(class="jumbotron")
             h1(class="display-3") Welcome to Lannister Pay!
-            p(class="lead") Keep calm and a Lannister always pays!
+            p(class="lead") 
+                p(style="color:blue") Keep calm and a Lannister always pays!
+                p(style="color:red") #{err}
             hr(class="my-4")
             p 欢迎使用Lannister Pay聚合收款服务！
             p 您也可以部署自己的聚合收款系统！点击上面的<a href="https://github.com/i2j/lannisterpay" target=_blank>Github</a>！
             p(class="lead")
-                a(class="btn btn-outline-primary btn-lg" href="/list" role="button") 点击进入
+                a(class="btn btn-outline-primary btn-lg" href="/" role="button") 回到主页
         include ../share/footer

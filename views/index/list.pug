@@ -1,0 +1,26 @@
+doctype html
+html
+    include ../share/head
+    body
+        include ../share/header
+        div(class="container pt-2")
+            table(class="table table-hover text-center")
+                thead(class="thread-dark")
+                    tr(class="table-dark")
+                        th(scope="col") 服务种类
+                        th(scope="col") 服务简介
+                        th(scope="col") 立刻体验
+                tbody
+                    tr(class="table-info")
+                        th(scope="row") Lannister
+                        td 个人支付二维码多合一
+                        td <a class="btn btn-outline-success btn-block" href="/lannister" role="button">个人聚合收款</a>
+                    tr(class="table-info")
+                        th(scope="row") API
+                        td 各种第三方、第四方解决方案，服务个人和商户
+                        td <a class="btn btn-outline-success btn-block" href="/api" role="button">第三方API</a>
+                    tr(class="table-info")
+                        th(scope="row") Coin
+                        td 比特币等加密币
+                        td <a class="btn btn-outline-success btn-block" href="/coin" role="button">Coin</a>
+        include ../share/footer

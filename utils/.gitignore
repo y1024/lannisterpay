@@ -2,3 +2,4 @@
 # If you are building a service for yourself, delete this file.
 
 db.json
+config.js
