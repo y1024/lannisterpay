@@ -47,9 +47,9 @@ git clone git@github.com:i2j/lannisterpay.git .
 >    ```
 
 
-### TODO
+### TODO :date:
  - 整合多个个人收款api服务
-    - [paysapi.com](paysapi.com)
+    - [paysapi.com](paysapi.com) :white_check_mark:
     - payjs.cn
     - greenzf.com
  - 发布一个管理界面，达到多个目的：
@@ -62,13 +62,16 @@ git clone git@github.com:i2j/lannisterpay.git .
 
 ### 直接联系作者：base64 `ZXJpY2h1aTMyOUBnbWFpbC5jb20K`
 
-### 已知Bug列表:
+### 已知Bug列表: :imp:
  - 目前微信不能用，微信都进不去支付路由('/lannister/pay')
  - QQ扫码也时不时不能用
     - 目前可以重现的是小米手机(MIUI)，如果QQ双开，用双开的QQ扫码，`可能`会出现问题，`解决方案`是你清理所有QQ进程，然后再扫，就好了
- - 没有在`macOS`上测试过，仅测试过`Windows 10`
+ - 没有在`macOS`上测试过，本地开发环境仅测试过`Windows 10`，服务器环境仅测试过`Ubuntu 16.04`
 
 ### Licesne: [MIT](License)
 
-### Sponsors :moneybag:
+### Sponsors :moneybag: (排名按照字母表顺序)
  - PaysAPI: 感谢提供的测试接口和赞助，他们的网址：https://www.paysapi.com/
+
+### Contributors: :revolving_hearts: (排名按照字母表顺序)
+ - [medmin](https://github.com/medmin)

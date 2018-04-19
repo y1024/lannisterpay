@@ -1,0 +1,3 @@
+*	text=auto
+*.pug linguist-language=javascript
+*.sql linguist-generated=true

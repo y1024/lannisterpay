@@ -29,12 +29,13 @@ let index = require('./routes/index');
 let lannister = require('./routes/lannister');
 let api = require('./routes/api');
 let coin = require('./routes/coin');
+let iot = require('./routes/iot');
 
 app.use('/',index);
 app.use('/lannister', lannister); //个人支付多合一
 app.use('/api', api); // 各种世面上的支付接口api，支持个人和商家
 app.use('/coin', coin); //比特币、加密币等
-
+app.use('/iot', iot);
 
 app.listen(PORT, function () {
     console.log(`Lannister Pay is running on PORT ${PORT}...`)

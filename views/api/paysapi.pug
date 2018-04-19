@@ -19,7 +19,13 @@ html
                         li 欢迎PR和Issue！
                         li 欢迎提出Bug！
                         li 求UI高手设计页面！
-                    button(type="button" class="btn btn-lg btn-block btn-outline-primary") Sign up for free
+                        //- req.body = { price, istype, orderid, orderuid, goodsname}
+                    form(action="/api/paysapi" method="POST")
+                        input(type="hidden" value="1.88" name="price")
+                        input(type="hidden" value="1.88" name="orderid")
+                        input(type="hidden" value="1.88" name="orderuid")
+                        input(type="hidden" value="encourage" name="goodsname")
+                        button(type="submit" class="btn btn-lg btn-block btn-success") 鼓励
             div(class="card mb-4 box-shadow")
                 div(class="card-header")
                     h4(class="my-0 font-weight-normal") 打赏LannisterPay
@@ -30,7 +36,10 @@ html
                         li 欢迎PR和Issue！
                         li 欢迎提出Bug！
                         li 求UI高手设计页面！
-                    button(type="button" class="btn btn-lg btn-block btn-outline-primary") Sign up for free
+                    form(action="/api/paysapi" method="POST")
+                        input(type="hidden" value="8.88" name="price") 
+                        input(type="hidden" value="8.88" name="price")
+                        button(type="submit" class="btn btn-lg btn-block btn-success") 打赏
             div(class="card mb-4 box-shadow")
                 div(class="card-header")
                     h4(class="my-0 font-weight-normal") 支持LannisterPay
@@ -41,7 +50,9 @@ html
                         li 欢迎PR和Issue！
                         li 欢迎提出Bug！
                         li 求UI高手设计页面！
-                    button(type="button" class="btn btn-lg btn-block btn-outline-primary") Sign up for free
+                    form(action="/api/paysapi" method="POST")
+                        input(type="hidden" value="18.88" name="price")
+                        button(type="submit" class="btn btn-lg btn-block btn-success") 支持
             div(class="card mb-4 box-shadow")
                 div(class="card-header")
                     h4(class="my-0 font-weight-normal") 土豪包养LannisterPay
@@ -52,6 +63,8 @@ html
                         li 欢迎PR和Issue！
                         li 欢迎提出Bug！
                         li 求UI高手设计页面！
-                    button(type="button" class="btn btn-lg btn-block btn-outline-primary") Sign up for free
+                    form(action="/api/paysapi" method="POST")
+                        input(type="hidden" value="1888" name="price")
+                        button(type="submit" class="btn btn-lg btn-block btn-success") 包养
                        
         include ../share/footer
